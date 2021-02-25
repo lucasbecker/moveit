@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>move.it</title>
+        <title>moveit</title>
         <meta
           name="description"
           content="Web site created using create-next-app"
