@@ -1,4 +1,7 @@
 import Head from 'next/head';
+
+import { ChallengesProvider } from '../contexts/ChallengesContext';
+
 import '../styles/global.css';
 
 function MyApp({ Component, pageProps }) {
@@ -11,7 +14,9 @@ function MyApp({ Component, pageProps }) {
           content="Web site created using create-next-app"
         />
       </Head>
-      <Component {...pageProps} />
+      <ChallengesProvider>
+        <Component {...pageProps} />
+      </ChallengesProvider>
     </>
   )
 }
