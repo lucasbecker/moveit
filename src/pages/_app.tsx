@@ -14,9 +14,7 @@ function MyApp({ Component, pageProps }) {
           content="Web site created using create-next-app"
         />
       </Head>
-      <ChallengesProvider>
-        <Component {...pageProps} />
-      </ChallengesProvider>
+      <Component {...pageProps} />
     </>
   )
 }
